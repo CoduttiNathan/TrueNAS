@@ -15,6 +15,7 @@
         "last_update": "2024-11-03 12:00:00",
         "name": "traefik",
         "title": "Traefik",
+        "recommended": false,
         "tags": [
           "proxy",
           "load-balancer",
