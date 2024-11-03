@@ -1,4 +1,4 @@
-apiVersion: v2
 name: traefik
+apiVersion: v2
 version: 1.0.0
 description: Traefik - Reverse Proxy et Load Balancer open-source
