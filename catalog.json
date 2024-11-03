@@ -31,7 +31,8 @@
         "sources": [
           "https://github.com/traefik/traefik"
         ],
-        "icon_url": "https://traefik.io/img/traefik.icon.png"
+        "icon_url": "https://traefik.io/img/traefik.icon.png",
+        "screenshots": []
       }
     }
   }
