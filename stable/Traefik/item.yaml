@@ -1,3 +1,5 @@
 name: traefik
 location: /path/to/traefik
 latest_version: "1.0.0"
+categories:
+  - network

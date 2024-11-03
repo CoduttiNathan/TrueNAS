@@ -1,5 +1,8 @@
-questions:
-  - variable: replicaCount
-    default: 1
-    description: "Nombre de répliques de Traefik"
-    type: int
+groups:
+  - name: Configuration générale
+    description: "Paramètres principaux pour Traefik"
+    questions:
+      - variable: replicaCount
+        default: 1
+        description: "Nombre de répliques de Traefik"
+        type: int
