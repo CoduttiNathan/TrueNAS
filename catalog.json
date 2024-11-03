@@ -17,6 +17,12 @@
         "name": "traefik",
         "title": "Traefik",
         "recommended": false,
+        "maintainers": [
+          {
+            "name": "Codutti Nathan",
+            "email": "coduttinathan@gmail.com"
+          }
+        ],
         "tags": [
           "proxy",
           "load-balancer",
