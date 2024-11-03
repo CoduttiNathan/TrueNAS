@@ -1,7 +1,7 @@
 groups:
   - name: Configuration générale
     description: "Paramètres principaux pour Traefik"
-    questions:
+questions:
       - variable: replicaCount
         default: 1
         description: "Nombre de répliques de Traefik"
