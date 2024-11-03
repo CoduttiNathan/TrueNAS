@@ -1,20 +1,25 @@
-{
-    "name": "TrueNAS Apps",
-    "description": "Un catalogue d'applications personnalisées pour TrueNAS SCALE",
-    "location": "https://github.com/CoduttiNathan/TrueNAS",
-    "maintainers": [
-      {
-        "name": "Codutti Nathan",
-        "email": "coduttinathan@gmail.com"
-      }
-    ],
-    "healthy": true,
-    "sources": [
-      {
-        "name": "Traefik",
-        "description": "Reverse Proxy et Load Balancer open-source pour Kubernetes",
-        "location": "https://github.com/traefik/traefik"
-      }
-    ]
+  {
+    "version": "1.0.0",
+    "catalog": {
+      "name": "TrueNAS Apps",
+      "description": "Un catalogue d'applications personnalisées pour TrueNAS SCALE",
+      "location": "https://github.com/CoduttiNathan/TrueNAS",
+      "maintainers": [
+        {
+          "name": "Codutti Nathan",
+          "email": "coduttinathan@gmail.com"
+        }
+      ],
+      "healthy": true,
+      "sources": [
+        {
+          "app": "traefik",
+          "version": "1.0.0",
+          "description": "Reverse Proxy et Load Balancer open-source pour Kubernetes",
+          "location": "https://github.com/traefik/traefik"
+        }
+      ]
+    }
   }
+  
   
