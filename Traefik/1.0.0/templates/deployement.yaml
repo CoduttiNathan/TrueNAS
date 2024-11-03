@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Release.Name }}
+  labels:
+    app: {{ .Release.Name }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: {{ .Release.Name }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Release.Name }}
+    spec:
+      containers:
+        - name: traefik
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          ports:
+            - name: web
+              containerPort: {{ .Values.service.ports.web.port }}
+            - name: websecure
+              containerPort: {{ .Values.service.ports.websecure.port }}
+          args:
+            - "--entrypoints.web.address=:80"
+            - "--entrypoints.websecure.address=:443"
+            - "--api.dashboard=true"
+            - "--providers.kubernetescrd"
